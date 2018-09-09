@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- <script src="https://unpkg.com/ag-grid/dist/ag-grid.min.noStyle.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./js/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-theme-balham.css">
+</head>
+<body>
+        <form>
+            <label for="zip">Zip</label>
+            <input type="text" name="zip" id="zip" placeholder="91202" required>
+            <br>
+            <label for="term">Search Term</label>
+            <input type="text" name="term"  id="term" placeholder="print" required >
+        
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        <div class="search-terms"></div>
+     <div id="myGrid" style="height: 600px;width:50%;" class="ag-theme-balham"></div>
+    
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>  

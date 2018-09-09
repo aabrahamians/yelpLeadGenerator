@@ -1,0 +1,15 @@
+form{
+    width: 30%;
+    display: inline-block;
+}
+body{
+    background-color: wheat;
+}
+
+.search-terms{
+    display: inline-block;
+    border: 2px solid #000;
+    width: 69%;
+    position: relative;
+    height: 4em;
+}

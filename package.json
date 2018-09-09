@@ -1,0 +1,41 @@
+{
+  "name": "yelpsearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel build index.html && node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aabrahamians/yelpLeadGenerator.git"
+  },
+  "keywords": [
+    "Yelp",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ag-grid": "^18.1.2",
+    "cors": "^2.8.4",
+    "cssnano": "^4.0.5",
+    "express": "^4.16.3",
+    "foundation-sites": "^6.5.0-rc.2",
+    "mongoose": "^5.2.6",
+    "nodemon": "^1.18.3",
+    "path": "^0.12.7",
+    "yelp-fusion": "^2.0.3"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "lodash": "^4.17.10",
+    "main.css": "0.0.1",
+    "parcel": "^1.9.7"
+  },
+  "bugs": {
+    "url": "https://github.com/aabrahamians/yelpLeadGenerator/issues"
+  },
+  "homepage": "https://github.com/aabrahamians/yelpLeadGenerator#readme"
+}
