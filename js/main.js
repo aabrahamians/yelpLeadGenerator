@@ -86,7 +86,7 @@ var showTable = rowData => {
 
   // lookup the container we want the Grid to use
   var eGridDiv = document.querySelector("#myGrid");
-  eGridDiv.empty();
+  eGridDiv.innerHTML = "";
   // create the grid passing in the div to use together with the columns & data we want to use
   new Grid(eGridDiv, gridOptions);
 };
