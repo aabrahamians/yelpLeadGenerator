@@ -13,8 +13,8 @@ $("form").on("submit", e => {
 
 var doSearch = (term, zip) => {
   $.ajax({
-    // url: "search?term=" + term + "&location=" + zip,
-    url: "http://localhost:8833/search?term=" + term + "&location=" + zip,
+    url: "search?term=" + term + "&location=" + zip,
+    // url: "http://localhost:8833/search?term=" + term + "&location=" + zip,
     success: function(data) {
       // htmlObject = "";
       // data.forEach((each) => {
@@ -30,8 +30,8 @@ var doSearch = (term, zip) => {
 
 function retrievePastSearch(term, zip) {
   $.ajax({
-    url: "http://localhost:8833/allTerms",
-    // url: "allTerms",
+    // url: "http://localhost:8833/allTerms",
+    url: "allTerms",
     success: function(terms) {
       // htmlObject = "";
       // data.forEach((each) => {
@@ -86,7 +86,7 @@ var showTable = rowData => {
 
   // lookup the container we want the Grid to use
   var eGridDiv = document.querySelector("#myGrid");
-
+  eGridDiv.empty();
   // create the grid passing in the div to use together with the columns & data we want to use
   new Grid(eGridDiv, gridOptions);
 };
